@@ -1,0 +1,49 @@
+{
+  "name": "EventsAPI",
+  "version": "1.0.0",
+  "description": "An API to create and manage events",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && npm run build-babel",
+    "build-babel": "babel -d ./build ./src -s",
+    "clean": "rm -rf .nyc_output build coverage && mkdir build",
+    "lint": "eslint \"**/*.js\" --fix",
+    "postinstall": "npm run build",
+    "start": "node ./build/index.js",
+    "start:dev": "set DEBUG=dev && nodemon --exec babel-node ./src/index.js",
+    "test": "nyc mocha --require @babel/register --timeout 1000 ./test/index.js --exit && npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meetKazuki/EventsAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meetKazuki/EventsAPI/issues"
+  },
+  "homepage": "https://github.com/meetKazuki/EventsAPI#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "swagger-ui-express": "^4.0.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1"
+  }
+}
