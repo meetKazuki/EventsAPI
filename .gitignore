@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# misc
+build/
+xnotes.md
+package-lock.json
