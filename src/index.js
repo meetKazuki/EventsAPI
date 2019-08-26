@@ -1,16 +1,18 @@
 import debug from 'debug';
 import express from 'express';
-// import swaggerUi from 'swagger-ui-express';
+import swaggerUi from 'swagger-ui-express';
+import swaggerDoc from '../docs/events-doc.json';
 import eventRoute from './routes/events.routes';
 
 const app = express();
 const DEBUG = debug('dev');
 const PORT = process.env.PORT || 4500;
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1', eventRoute);
-// app.use('/api/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
+app.use('/api/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 app.get('/', (req, res) => {
   res.status(200).json({

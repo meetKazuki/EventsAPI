@@ -8,4 +8,9 @@ eventRoute.get(
   EventsController.getAllEvents,
 );
 
+eventRoute.post(
+  '/events',
+  EventsController.createEvent,
+);
+
 export default eventRoute;

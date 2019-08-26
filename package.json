@@ -7,12 +7,12 @@
     "build": "npm run clean && npm run build-babel",
     "build-babel": "babel -d ./build ./src -s",
     "clean": "rm -rf .nyc_output build coverage && mkdir build",
-    "coverage": "cat ./coverage/lcov.info | coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "eslint \"**/*.js\" --fix",
     "postinstall": "npm run build",
     "start": "node ./build/index.js",
     "start:dev": "set DEBUG=dev && nodemon --exec babel-node ./src/index.js",
-    "test": "nyc mocha --require @babel/register --timeout 1000 ./test/index.js --exit && npm run clean"
+    "test": "nyc mocha --require @babel/register --timeout 1000 ./test/index.js --exit"
   },
   "repository": {
     "type": "git",

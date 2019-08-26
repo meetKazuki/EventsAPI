@@ -61,6 +61,7 @@ typings/
 .next
 
 # misc
+.vscode
 build/
 xnotes.md
 package-lock.json
