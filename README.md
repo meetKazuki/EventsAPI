@@ -1,6 +1,7 @@
 # Events API
 
 [![Build Status](https://travis-ci.org/meetKazuki/EventsAPI.svg?branch=develop)](https://travis-ci.org/meetKazuki/EventsAPI)
+[![Coverage Status](https://coveralls.io/repos/github/meetKazuki/EventsAPI/badge.svg?branch=develop)](https://coveralls.io/github/meetKazuki/EventsAPI?branch=develop)
 
 ## Overview
 
@@ -8,7 +9,7 @@ This little project provides an API that you can use to create and manage your E
 
 ## Project Pipeline
 
-- [Hosted API]()
+- [Hosted API](https://eventsapi-staging.herokuapp.com/)
 - [API Docs](/docs)
 
 
