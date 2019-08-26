@@ -10,7 +10,7 @@ This little project provides an API that you can use to create and manage your E
 ## Project Pipeline
 
 - [Hosted API](https://eventsapi-staging.herokuapp.com/)
-- [API Docs](/docs)
+- [API Docs](https://eventsapi-staging.herokuapp.com/docs)
 
 
 ## Technologies Used
