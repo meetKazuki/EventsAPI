@@ -7,6 +7,7 @@
     "build": "npm run clean && npm run build-babel",
     "build-babel": "babel -d ./build ./src -s",
     "clean": "rm -rf .nyc_output build coverage && mkdir build",
+    "coverage": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint \"**/*.js\" --fix",
     "postinstall": "npm run build",
     "start": "node ./build/index.js",
