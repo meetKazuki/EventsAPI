@@ -11,6 +11,7 @@ This little project provides an API that you can use to create and manage your E
 
 - [Hosted API](https://eventsapi-staging.herokuapp.com/)
 - [API Docs](https://eventsapi-staging.herokuapp.com/docs)
+- [Postman Collections](https://www.getpostman.com/collections/436773e9e1be1d83c314)
 
 
 ## Technologies Used
@@ -25,7 +26,7 @@ This little project provides an API that you can use to create and manage your E
 Ensure that you have the following installed on your local machine:
 
 - [NodeJS](https://nodejs.org/en/download)
-- [Git]()
+- [Git](https://git-scm.com/downloads)
 
 ### Running locally
 
