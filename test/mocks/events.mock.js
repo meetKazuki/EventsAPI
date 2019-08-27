@@ -1,4 +1,5 @@
 const validEvent = {
+  id: 11,
   title: 'harness innovative paradigms',
   description: 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.',
   location: '3261 Schmedeman Pass',

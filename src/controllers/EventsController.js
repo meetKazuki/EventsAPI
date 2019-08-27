@@ -8,6 +8,23 @@ export default class EventsController {
     });
   }
 
+  static getAnEvent(req, res) {
+    const eventId = parseInt(req.params.id, 10);
+    const theEvent = eventsDB.find((data) => data.id === eventId);
+
+    if (!theEvent) {
+      return res.status(404).json({
+        status: 'error',
+        error: 'Event not found',
+      });
+    }
+
+    return res.status(200).json({
+      status: 'success',
+      data: theEvent,
+    });
+  }
+
   static createEvent(req, res) {
     const {
       title, description, location, date,

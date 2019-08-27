@@ -25,6 +25,34 @@ describe('Get Events', () => {
         });
     });
   });
+
+  context('Retrieve a single event', () => {
+    it('should retrieve an event given its ID', (done) => {
+      chai
+        .request(app)
+        .get(`${baseURI}/events/${6}`)
+        .end((err, res) => {
+          expect(res).to.have.status(200);
+          expect(res.body).to.have.property('status');
+          expect(res.body.status).to.eql('success');
+          done(err);
+        });
+    });
+
+    specify('error if event ID is not found', (done) => {
+      chai
+        .request(app)
+        .get(`${baseURI}/events/${11}`)
+        .end((err, res) => {
+          expect(res).to.have.status(404);
+          expect(res.body).to.have.property('status');
+          expect(res.body.status).to.eql('error');
+          done(err);
+        });
+    });
+
+    specify('error if ID given is invalid (not a number)');
+  });
 });
 
 describe('Create events', () => {
