@@ -8,6 +8,11 @@ eventRoute.get(
   EventsController.getAllEvents,
 );
 
+eventRoute.get(
+  '/events/:id',
+  EventsController.getAnEvent,
+);
+
 eventRoute.post(
   '/events',
   EventsController.createEvent,
