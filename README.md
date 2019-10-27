@@ -42,10 +42,17 @@ Ensure that you have the following installed on your local machine:
 
 ### Testing
 
-Test specs are implemented using [mocha](https://mochajs.org) & [chai](https://chaijs.com).
+Test specs are implemented using [_mocha_](https://mochajs.org) & [_chai_](https://chiajs.com).
 
-- To test (consume) the API locally, you can make use of [Postman](https://getpostman.com).
-- You can also run an automated test by running `npm test`. `npm test` performs a single full test suite run, including code coverage reporting.
+- To test or consume the API locally, you can make use of [_Postman_](https://www.getpostman.com) to simulate a front-end client.
+
+- If you want to take the step below, first create a PostgreSQL database by running the command below in `psql`.
+
+  ```bash
+   createdb -h localhost -p 5432 -U postgres quicktest
+  ```
+
+- There is also a test script that you can fire up by running `npm test`. `npm test` performs a single full test suite run, including code coverage reporting.
 
 
 ## License
