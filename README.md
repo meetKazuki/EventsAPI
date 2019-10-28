@@ -3,11 +3,11 @@
 [![Build Status](https://travis-ci.org/meetKazuki/EventsAPI.svg?branch=develop)](https://travis-ci.org/meetKazuki/EventsAPI)
 [![Coverage Status](https://coveralls.io/repos/github/meetKazuki/EventsAPI/badge.svg?branch=develop)](https://coveralls.io/github/meetKazuki/EventsAPI?branch=develop)
 
-## Overview
+## Overview:
 
-This little project provides an API that you can use to create and manage your Events.
+This project provides an API that you can be used to create and manage your events. 
 
-## Project Pipeline
+## Project Pipeline:
 
 - [Hosted API](https://eventsapi-staging.herokuapp.com/)
 - [API Docs](https://eventsapi-staging.herokuapp.com/docs)
@@ -19,7 +19,7 @@ This little project provides an API that you can use to create and manage your E
 * ExpressJS
 
 
-## Getting Started
+## Getting Started:
 
 ### Prerequisites
 
@@ -30,15 +30,13 @@ Ensure that you have the following installed on your local machine:
 
 ### Running locally
 
-- Make sure you have *NodeJS*, *Git* installed.
-- Clone this repository
-
   ```bash
     - git clone https://github.com/meetKazuki/EventsAPI.git
     - cd EventsAPI
     - npm install
+    - npm run start:dev 
   ```
-- Run `npm run start:dev` to spin up the server and watch for changes.
+- `npm run start:dev` - to spin up the server and watch for changes.
 
 ### Testing
 
@@ -55,6 +53,6 @@ Test specs are implemented using [_mocha_](https://mochajs.org) & [_chai_](https
 - There is also a test script that you can fire up by running `npm test`. `npm test` performs a single full test suite run, including code coverage reporting.
 
 
-## License
+## License:
 
 The EventsAPI project is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
