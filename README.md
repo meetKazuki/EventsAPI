@@ -3,14 +3,16 @@
 [![Build Status](https://travis-ci.org/meetKazuki/EventsAPI.svg?branch=develop)](https://travis-ci.org/meetKazuki/EventsAPI)
 [![Coverage Status](https://coveralls.io/repos/github/meetKazuki/EventsAPI/badge.svg?branch=develop)](https://coveralls.io/github/meetKazuki/EventsAPI?branch=develop)
 
+
 ## Overview:
 
-This project provides an API that you can be used to create and manage your events. 
+This project provides an API that you can be used to create and manage your events.
+
 
 ## Project Pipeline:
 
 - [Hosted API](https://eventsapi-staging.herokuapp.com/)
-- [API Docs](https://eventsapi-staging.herokuapp.com/docs)
+- [API Docs](https://eventsapi-staging.herokuapp.com/api/v1/docs)
 - [Postman Collections](https://www.getpostman.com/collections/436773e9e1be1d83c314)
 
 
@@ -34,7 +36,7 @@ Ensure that you have the following installed on your local machine:
     - git clone https://github.com/meetKazuki/EventsAPI.git
     - cd EventsAPI
     - npm install
-    - npm run start:dev 
+    - npm run start:dev
   ```
 - `npm run start:dev` - to spin up the server and watch for changes.
 
